@@ -1,21 +1,18 @@
 <?php
 
 use BernskioldMedia\Fortnox\TokenStorage\CacheTokenStorage;
-// fetch the credentials from the database
-use App\Models\AccountingProvider;
-
 
 return [
 
     /**
      * The client ID provided by Fortnox for your application.
      */
-    'client_id' => AccountingProvider::firstWhere('identifier', 'fortnox')->client_id,
+    'client_id' => env('FORTNOX_CLIENT_ID', ''),
 
     /**
      * The client secret provided by Fortnox for your application.
      */
-    'client_secret' => AccountingProvider::firstWhere('identifier', 'fortnox')->client_secret,
+    'client_secret' => env('FORTNOX_CLIENT_SECRET', ''),
 
     /**
      * The URL to the Fortnox API.

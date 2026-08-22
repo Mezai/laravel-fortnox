@@ -2,7 +2,7 @@
 
 namespace BernskioldMedia\Fortnox\Tests;
 
-use BernskioldMedia\Fortnox\FortnoxServiceProvider;
+use BernskioldMedia\Fortnox\Providers\FortnoxServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

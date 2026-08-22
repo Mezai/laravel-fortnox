@@ -1,6 +1,6 @@
 <?php
 
-namespace BernskioldMedia\Fortnox;
+namespace BernskioldMedia\Fortnox\Providers;
 
 use BernskioldMedia\Fortnox\Commands\RefreshFortnoxAccessToken;
 use BernskioldMedia\Fortnox\Contracts\TokenStorage;
