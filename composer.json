@@ -60,7 +60,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BernskioldMedia\\Fortnox\\FortnoxServiceProvider"
+                "BernskioldMedia\\Fortnox\\Providers\\FortnoxServiceProvider"
             ],
             "aliases": {
                 "Fortnox": "BernskioldMedia\\Fortnox\\Facades\\Fortnox"
