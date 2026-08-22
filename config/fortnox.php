@@ -4,6 +4,7 @@ use BernskioldMedia\Fortnox\TokenStorage\CacheTokenStorage;
 // fetch the credentials from the database
 use App\Models\AccountingProvider;
 
+
 return [
 
     /**
