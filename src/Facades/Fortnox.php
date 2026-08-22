@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static Customer customers()
  * @method static FinancialYear financialYears()
  * @method static Invoice invoices()
+ * @method static Order orders()
  * @method static Project project()
  * @method static Sie sie()
  * @method static Supplier supplier()
