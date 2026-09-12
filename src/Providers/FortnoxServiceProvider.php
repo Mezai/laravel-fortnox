@@ -38,7 +38,7 @@ class FortnoxServiceProvider extends PackageServiceProvider
          Socialite::extend('fortnox', function ($app) {
             $config = Arr::get($app, 'config.fortnox');
 
-            return Socialite::buildProvider(VismaSocialiteProvider::class, [
+            return Socialite::buildProvider(FortnoxSocialiteProvider::class, [
                 'client_id' => Arr::get($config, 'client_id'),
                 'client_secret' => Arr::get($config, 'client_secret'),
                 'redirect' => url(Arr::get($config, 'routes.oauth.callback')),
