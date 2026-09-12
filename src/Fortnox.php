@@ -16,6 +16,7 @@ use BernskioldMedia\Fortnox\Resources\Supplier;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoice;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoicePayment;
 use BernskioldMedia\Fortnox\Resources\Voucher;
+use BernskioldMedia\Fortnox\FortnoxClient;
 
 class Fortnox
 {
