@@ -34,12 +34,10 @@ class FortnoxServiceProvider extends PackageServiceProvider
 
     public function bootingPackage()
     {
-        $socialite = $this->app->make(Factory::class);
-        $socialite->extend('fortnox', function ($app) use ($socialite) {
+         Socialite::extend('fortnox', function ($app) {
             $config = Arr::get($app, 'config.fortnox');
-            $this->protectAgainstInvalidConfiguration($config);
 
-            return $socialite->buildProvider(FortnoxSocialiteProvider::class, [
+            return Socialite::buildProvider(VismaSocialiteProvider::class, [
                 'client_id' => Arr::get($config, 'client_id'),
                 'client_secret' => Arr::get($config, 'client_secret'),
                 'redirect' => url(Arr::get($config, 'routes.oauth.callback')),
