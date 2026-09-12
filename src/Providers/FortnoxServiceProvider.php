@@ -9,6 +9,7 @@ use BernskioldMedia\Fortnox\Socialite\FortnoxSocialiteProvider;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Arr;
 use Laravel\Socialite\Contracts\Factory;
+use Laravel\Socialite\Facades\Socialite;
 use RateLimiter;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
