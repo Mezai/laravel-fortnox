@@ -10,6 +10,7 @@ use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Arr;
 use Laravel\Socialite\Contracts\Factory;
 use Laravel\Socialite\Facades\Socialite;
+use BernskioldMedia\Fortnox\FortnoxClient;
 use RateLimiter;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
