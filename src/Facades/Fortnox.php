@@ -15,6 +15,7 @@ use BernskioldMedia\Fortnox\Resources\Supplier;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoice;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoicePayment;
 use BernskioldMedia\Fortnox\Resources\Voucher;
+use BernskioldMedia\Fortnox\Resources\InvoicePayment;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -32,6 +33,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static SupplierInvoice supplierInvoices()
  * @method static SupplierInvoicePayment supplierInvoicePayments()
  * @method static Voucher vouchers()
+ * @method static InvoicePayment invoicepayments()
  *
  * @see \BernskioldMedia\Fortnox\Fortnox
  */

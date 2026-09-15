@@ -16,6 +16,7 @@ use BernskioldMedia\Fortnox\Resources\Supplier;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoice;
 use BernskioldMedia\Fortnox\Resources\SupplierInvoicePayment;
 use BernskioldMedia\Fortnox\Resources\Voucher;
+use BernskioldMedia\Fortnox\Resources\InvoicePayment;
 use BernskioldMedia\Fortnox\FortnoxClient;
 
 class Fortnox
@@ -95,6 +96,11 @@ class Fortnox
     public function vouchers(): Voucher
     {
         return new Voucher($this->client);
+    }
+
+    public function invoicepayments(): InvoicePayment
+    {
+        return new InvoicePayment($this->client);
     }
 
 }
