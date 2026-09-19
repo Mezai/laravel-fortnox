@@ -5,6 +5,7 @@ namespace BernskioldMedia\Fortnox\Facades;
 use BernskioldMedia\Fortnox\Resources\AbsenceTransaction;
 use BernskioldMedia\Fortnox\Resources\Account;
 use BernskioldMedia\Fortnox\Resources\AccountChart;
+use BernskioldMedia\Fortnox\Resources\Article;
 use BernskioldMedia\Fortnox\Resources\Contract;
 use BernskioldMedia\Fortnox\Resources\Customer;
 use BernskioldMedia\Fortnox\Resources\FinancialYear;
@@ -22,6 +23,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static AbsenceTransaction absenceTransactions()
  * @method static Account accounts()
  * @method static AccountChart accountCharts()
+ * @method static Article articles()
  * @method static Contract contracts()
  * @method static Customer customers()
  * @method static FinancialYear financialYears()

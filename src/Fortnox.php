@@ -5,6 +5,7 @@ namespace BernskioldMedia\Fortnox;
 use BernskioldMedia\Fortnox\Resources\AbsenceTransaction;
 use BernskioldMedia\Fortnox\Resources\Account;
 use BernskioldMedia\Fortnox\Resources\AccountChart;
+use BernskioldMedia\Fortnox\Resources\Article;
 use BernskioldMedia\Fortnox\Resources\Contract;
 use BernskioldMedia\Fortnox\Resources\Customer;
 use BernskioldMedia\Fortnox\Resources\FinancialYear;
@@ -101,6 +102,11 @@ class Fortnox
     public function invoicepayments(): InvoicePayment
     {
         return new InvoicePayment($this->client);
+    }
+
+    public function articles(): Article
+    {
+        return new Article($this->client);
     }
 
 }
